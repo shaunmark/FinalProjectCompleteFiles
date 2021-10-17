@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterNewVehicle">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/base_design" />
+
+    <TextView
+        android:id="@+id/registerNewVehicleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_bold"
+        android:text="REGISTER NEW VEHICLE"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundImageView"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="530dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/backgroundImageView"
+        app:layout_constraintTop_toBottomOf="@+id/registerNewVehicleTextView"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/registration_back_box" />
+
+    <EditText
+        android:id="@+id/firstNameText"
+        android:layout_width="298dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <EditText
+        android:id="@+id/lastNameText"
+        android:layout_width="298dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameText"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="298dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameText"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/plateNumberText"
+        android:layout_width="298dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Plate Number"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <EditText
+        android:id="@+id/mobileNumberText"
+        android:layout_width="298dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:inputType="phone|number"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plateNumberText"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="298dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/register_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileNumberText"
+        app:layout_constraintVertical_bias="0.81" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
